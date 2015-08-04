@@ -9,6 +9,6 @@ Homepage: https://github.com/mdrjr/c1_mali_libs
 Package: mali-x11
 Architecture: armhf
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Replaces: libgles2-mesa, libegl1-mesa
+Replaces: libgles2-mesa, libegl1-mesa, libgles2-mesa-dev, libegl1-mesa-dev
 Description: openGL libs from Mali
  openGL implemenation from Mali
