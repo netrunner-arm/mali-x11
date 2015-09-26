@@ -2,3 +2,7 @@
 %:
 	dh $@ 
 
+override_dh_install:
+	 echo "/usr/lib/$(DEB_HOST_MULTIARCH)/mali-egl" \
+        > $(CURDIR)/debian/mali-x11/usr/lib/$(DEB_HOST_MULTIARCH)/mali-egl/ld.so.conf
+	dh_install
