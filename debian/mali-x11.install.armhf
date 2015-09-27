@@ -1,3 +1,2 @@
 x11/mali_libs/* usr/lib/arm-linux-gnueabihf/mali-egl
-x11/mali_headers/ump usr/include/
-x11/mali_headers/umplock usr/include/
+

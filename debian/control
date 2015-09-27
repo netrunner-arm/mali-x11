@@ -11,3 +11,10 @@ Architecture: armhf
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: openGL libs from Mali
  openGL implemenation from Mali
+
+Package: mali-x11-dev
+Architecture: armhf
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: openGL libs from Mali
+ openGL implemenation from Mali
+
