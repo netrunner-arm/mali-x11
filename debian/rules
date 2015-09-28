@@ -14,5 +14,5 @@ override_dh_install:
 	for file in debian/mali-x11-dev/usr/lib/arm-linux-gnueabihf/pkgconfig/*.pc; \
 	do \
 		sed -i -e"s,lib/arm-linux-gnueabihf,lib/arm-linux-gnueabihf/mali-egl,g" \
-			$${file}
+			$${file} \
 	done
