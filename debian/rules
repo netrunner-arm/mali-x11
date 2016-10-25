@@ -2,17 +2,6 @@
 %:
 	dh $@
 
-override_dh_auto_build:
-	dh_auto_build
-	# Hack to workaround a broken libMali which incorrectly reports
-	# EGL_KHR_platform_x11 instead of EGL_EXT_platform_x11,
-	# causing breakage in KWin
-	sed -i 's,EGL_KHR_platform_x11,EGL_EXT_platform_x11,g' $(CURDIR)/x11/mali_libs/libMali.so
-
-override_dh_auto_clean:
-	sed -i 's,EGL_EXT_platform_x11,EGL_KHR_platform_x11,g' $(CURDIR)/x11/mali_libs/libMali.so
-	dh_auto_clean
-
 override_dh_install:
 	dh_install
 	echo "/usr/lib/$(DEB_HOST_MULTIARCH)/mali-egl" \
